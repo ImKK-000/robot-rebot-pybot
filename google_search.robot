@@ -1,7 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary   
-Test Setup    เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
-Test Teardown    ปิด Browser
+Suite Setup    เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
+Suite Teardown    ปิด Browser
+Test Teardown    กลับไปหน้า google.com
 
 *** Variables ***
 ${GOOGLE URL}    https://google.com
@@ -27,6 +28,9 @@ ${WEB BROWSER}    googlechrome
 กดปุ่มค้นหา
     Press Key    name=btnK    13
     Click Button    name=btnK
+
+กลับไปหน้า google.com
+    Go To    ${GOOGLE URL}
 
 ปิด Browser
     Close Browser
