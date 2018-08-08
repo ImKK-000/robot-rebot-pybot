@@ -2,8 +2,8 @@
 Library    SeleniumLibrary   
 
 *** Variables ***
-${GOOGLE_URL}    https://google.com
-${WEB_BROWSER}    googlechrome
+${GOOGLE URL}    https://google.com
+${WEB BROWSER}    googlechrome
 
 *** Testcases ***
 ค้นหา Google ด้วย Keyword ผัดกระเพราหมูกรอบใส่ไข่ดาว
@@ -20,7 +20,7 @@ ${WEB_BROWSER}    googlechrome
 
 *** Keywords ***
 เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
-    Open Browser    ${GOOGLE_URL}    ${WEB_BROWSER}
+    Open Browser    ${GOOGLE URL}    ${WEB BROWSER}
 
 ใส่ข้อความในช่องค้นหาด้วยคำว่า
     [Arguments]    ${KEYWORD_FOR_SEARCH_GOOGLE}
