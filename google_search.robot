@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary   
 
 *** Testcases ***
 ค้นหา Google ด้วย Keyword ผัดกระเพราหมูกรอบใส่ไข่ดาว
@@ -17,6 +17,7 @@ Library    SeleniumLibrary
     Input Text    class=gsfi    ${KEYWORD_FOR_SEARCH_GOOGLE}
 
 กดปุ่มค้นหา
+    Press Key    name=btnK    13
     Click Button    name=btnK
 
 ปิด Browser
