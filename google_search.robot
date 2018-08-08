@@ -12,6 +12,12 @@ ${WEB_BROWSER}    googlechrome
     กดปุ่มค้นหา
     ปิด Browser
 
+ค้นหา Google ด้วย Keyword ข้าวไข่เจียวหมูสับ
+    เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
+    ใส่ข้อความในช่องค้นหาด้วยคำว่า    ข้าวไข่เจียวหมูสับ
+    กดปุ่มค้นหา
+    ปิด Browser
+
 *** Keywords ***
 เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
     Open Browser    ${GOOGLE_URL}    ${WEB_BROWSER}
