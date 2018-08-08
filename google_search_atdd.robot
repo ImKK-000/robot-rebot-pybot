@@ -1,5 +1,4 @@
 *** Settings ***
-Library    SeleniumLibrary
 Suite Setup    เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
 Suite Teardown    ปิด Browser
 Test Teardown    กลับไปหน้า google.com
