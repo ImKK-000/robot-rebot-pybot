@@ -1,6 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary   
 
+*** Variables ***
+${GOOGLE_URL}    https://google.com
+${WEB_BROWSER}    googlechrome
+
 *** Testcases ***
 ค้นหา Google ด้วย Keyword ผัดกระเพราหมูกรอบใส่ไข่ดาว
     เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
@@ -10,7 +14,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
-    Open Browser    https://google.com    chrome
+    Open Browser    ${GOOGLE_URL}    ${WEB_BROWSER}
 
 ใส่ข้อความในช่องค้นหาด้วยคำว่า
     [Arguments]    ${KEYWORD_FOR_SEARCH_GOOGLE}
