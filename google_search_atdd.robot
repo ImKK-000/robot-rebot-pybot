@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    google_search_resource.robot
+Resource    google_search_low_level.robot
 Suite Setup    เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
 Suite Teardown    ปิด Browser
 Test Teardown    กลับไปหน้า google.com
