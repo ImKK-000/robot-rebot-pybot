@@ -5,7 +5,7 @@
     กดปุ่มค้นหา
 
 เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
-    Open Browser    ${GOOGLE URL}    ${WEB BROWSER}
+    Open Browser    ${URL}    ${WEB BROWSER}
     Wait Until Element Is Visible    id=lst-ib
 
 ใส่ข้อความในช่องค้นหา
@@ -17,7 +17,7 @@
     Click Button    name=btnK
 
 กลับไปหน้า google.com
-    Go To    ${GOOGLE URL}
+    Go To    ${URL}
 
 ปิด Browser
     Close Browser
