@@ -1,0 +1,3 @@
+#!/bin/bash
+robot --variable "WEB BROWSER":googlechrome google_search/atdd.robot
+robot --variable "WEB BROWSER":firefox google_search/atdd.robot
