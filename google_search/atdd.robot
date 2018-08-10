@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    low_level.robot
 Resource    keyword.robot
-Suite Setup    เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
+Suite Setup    เปิด Browser สำหรับเข้าเว็บ google.com
 Suite Teardown    ปิด Browser
 Test Teardown    กลับไปหน้า google.com
 Test Template    ค้นหา Google ด้วย Keyword

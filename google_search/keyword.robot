@@ -4,7 +4,7 @@
     ใส่ข้อความในช่องค้นหา    ${KEYWORD}
     กดปุ่มค้นหา
 
-เปิด Browser สำหรับเข้าเว็บ google.com ด้วย Google Chrome
+เปิด Browser สำหรับเข้าเว็บ google.com
     Open Browser    ${URL}    ${WEB BROWSER}
     Wait Until Element Is Visible    id=lst-ib
 
